@@ -1,0 +1,50 @@
+ body {
+  padding-top: var(--navbar-height);
+}
+
+
+.article {
+
+  padding-top: var(--navbar-height);
+  display: block;
+  
+  
+  
+} 
+
+
+.the-best-movies {
+
+  padding-top: var(--navbar-height);
+  height: 750px;
+  width: 100%;
+  margin-bottom: 5px;
+  padding:0;
+  margin-top: 1px;
+  background-color:black;
+
+
+
+}
+
+.slide:hover {
+  flex-grow: 2;
+}
+
+
+.container-the-best-movies {
+
+    padding-top: var(--navbar-height);
+    /* position: absolute; */
+    height: 40%;
+    width: 100%;
+    margin-bottom: 10px;
+    padding:0;
+    margin-top:0;
+    background-color:blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    
+}
+

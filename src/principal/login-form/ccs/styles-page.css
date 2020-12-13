@@ -1,0 +1,26 @@
+*{
+    font-family: Gotham SSm A,Gotham SSm B,Century Gothic,Futura,Arial,sans-serif;
+}
+
+
+:root{
+    --login-header-logo-height:3rem;
+}
+
+
+body{
+
+    background: black;
+    padding-top: var(--login-header-logo-height) ;
+    display: flex;
+
+
+}
+
+
+
+a, a:link, a:visited, a:focus {
+    text-decoration: none ;
+    color: blanchedalmond;
+}
+

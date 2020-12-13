@@ -1,0 +1,153 @@
+
+*{
+    font-family: Gotham SSm A,Gotham SSm B,Century Gothic,Futura,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+	left: 0;
+	margin:0;
+	background-color:black;
+}
+
+.section{
+
+	margin-top: var(--navbar-height);
+	display: block;
+}
+
+.title movie{
+	display: block;
+	margin-top: var(--navbar-height);
+	width: 400px;
+	display: block;
+	
+	
+	
+	padding: 1px;
+	margin-top: 1px;
+	margin-left: 1px;
+}
+
+ .containers {
+	left: 0;
+	margin-top: var(--navbar-height);
+	padding: 0;
+	background-color:white;
+	width: 100%;
+	margin:var(--navbar-height);
+	height: 500px;
+	display: grid;
+	grid-gap: 30px;
+} 
+.items {
+	/* padding: 20px; */
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #fff;
+	max-height: 500px;
+}
+ .items--2 {
+	background-color: white;
+	grid-column: 0.5;
+	min-width: 400px;
+	color:black;
+}
+.items--6 {
+	background-color: goldenrod;
+	grid-row: 0.5;
+	grid-column: 0.6666666667;
+	overflow-y: scroll;
+}
+.items--1 {
+	background-color:red;
+	height: 40px;
+	display: flex;
+	color: black;
+	
+	font-weight:300;
+	font-size: 1rem;
+	padding: 1px;
+	margin-top: 1px;
+	margin-left: 1px;
+	
+}
+.items--3 {
+	background-color:black;
+	height: 160px;
+	display: flex;
+	padding: 1px;
+	width: 100%;
+}
+.items--4 {
+	background-color: black;
+	height: 160px;
+	padding: 1px;
+	display: flex;
+	width: 100%;
+}
+.miniatura{
+
+	width: 200px;
+	height: 150px;
+	background-color: #fff;
+	padding: 1px;
+	margin-left: 1px;
+	margin-top:1px;
+
+	background: url('../../../principal/visualizacion/img/recomend1.jpg') center center
+	no-repeat;
+  background-size: cover;
+}
+
+.items-texto{
+	width: auto;
+	height: 125px;
+	background-color:black;
+	justify-content: flex-start;
+
+	font-size: 0.5rem;
+	padding: 5px;
+	margin-top: 2px;
+	margin-left: 2px;
+	
+
+}
+.grid-containers {
+	background-color: black;
+	margin-left: 0;
+	width: 1000px;
+	margin:var(--navbar-height);
+	margin: 20px auto;
+	display: grid;
+	grid-template-rows: 100px 1fr 2fr 100px;
+	grid-template-columns: repeat(3, 1fr) 20%;
+	grid-gap: 20px;
+	color: #fff;
+	font-family: sans-serif;
+}
+.grid-containers > * {
+	padding: 10px;
+}
+header {
+	background-color: #d62580;
+	grid-row: 0.5;
+	grid-column: -1;
+}
+.sm-box {
+	background-color: #d62580;
+	min-height: 100px;
+}
+.sm-box--1 {
+	grid-row: 0.6666666667;
+	grid-column: 0.5;
+}
+.sm-box--2 {
+	grid-row: 0.6666666667;
+	grid-column: 0.6666666667;
+}
+.sm-box--3 {
+	grid-row: 0.6666666667;
+	grid-column: 0.75;
+} *

@@ -1,0 +1,51 @@
+.id-email{
+    
+    width: 100%;
+    color: white;
+    
+    
+}
+
+.id-password{
+    display: block;
+    width: 100%;
+        color: white;
+}
+
+form label{
+    display: block;
+    padding: 3px;
+    margin-bottom: .3125rem;
+    color: gray;
+    transition: color .5s;
+    font-weight: 700;
+
+}
+.input-text{
+    height: 3rem;
+    display: block;
+    margin: 0;
+    font-size: 1.1rem;
+   
+    
+
+
+} 
+    
+.fit{
+    width: 99%;
+    border: 0;
+    padding: 2px 2px;
+}
+
+.button-login{
+    display: block;
+    width: 100%;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing:.1rem;
+    background-color:#00a3da ;
+    margin-top: 0.2rem;
+    margin-bottom: 1.8rem;
+    padding: 8px;
+}
