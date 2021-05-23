@@ -41,6 +41,14 @@ h1 {
   
 }
 
+.casting-title, .casting ul{
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  list-style:none;
+}
+
+
 .info-card .cover-content img{
   display: block;
   width: 100%;
