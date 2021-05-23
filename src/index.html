@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | visual</title>
+  <link rel="stylesheet" href="./css/variable.css" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/form.css" />
+  <link rel="stylesheet" href="./css/login.css" />
+
+
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="login-logo">Visual</div>
+    </header>
+    <main class="main">
+      <section class="login">
+        <div class="login-body">
+          <h1>Iniciar sesion</h1>
+
+          <form id="form-sesion" class="form-login" action="./page.html" method="GET">
+
+            <div class="form">
+              <label for="username">Usuario</label>
+              <input class="input-text fit" type="text" id="usuario" name="usuario"
+                placeholder="Usuario o Correo electronico" required />
+            </div>
+
+            <div class="form">
+              <label for="passwodor">Contraseña</label>
+              <input class="input-text fit" type="password" id="password" name="password" placeholder="Contraseña"
+                required />
+            </div>
+            <div class="form-button">
+              <input class="button-login" type="submit" value="Acceder" />
+              <a class="recordar" href="#">No recuerdo mi contraseña</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        © 2020 visual, Inc. All Rights Reserved. Número de registro:
+        123456789-0.
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

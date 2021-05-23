@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.header {
+  flex: 1 15%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  flex: 1 70%;
+}
+.footer {
+  flex: 1 15%;
+}
+
+.login-logo {
+  text-align: center;
+  background-color: royalblue;
+  height: var(--login-logo-height);
+  font-size: 2.5rem;
+  color: white;
+  width: 100%;
+}
+.login {
+  min-width: 300px;
+  max-width: 480px;
+  margin: auto;
+}
+
+.login-body {
+  text-align: center;
+  background-color: black;
+  padding: 5px 5px;
+  font-size: 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: 100;
+}
+
+.form-button {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.button-login,
+.recordar {
+  margin-left: 5rme;
+  text-align: right;
+  margin: 1rem;
+}
+.button-login {
+  background-color: yellow;
+  width: 7rem;
+  height: 3rem;
+  border: 0;
+  text-align: center;
+  border-radius: var(--border-radius);
+}
+
+.footer {
+  color: gray;
+  text-align: center;
+  margin-top: 3rem;
+  left: 0;
+  padding: 20px;
+}
+
+@media (min-width: 567px) {
+  .container {
+    margin-top: var(--login-logo-height + 30px);
+    background: url('../img/fondo.jpg');
+    background-size: cover;
+    opacity: 0.7;
+  }
+  .login-logo {
+    font-size: 2.7rem;
+    width: 480px;
+    height: 60px;
+    opacity: 0.9;
+    margin: 10px;
+    padding: 2px 2px;
+  }
+
+  .login-logo,
+  .login-body {
+    align-content: center;
+    align-self: center;
+    opacity: 0.9;
+  }
+
+  .login-body {
+    background-color: black;
+    font-size: 1rem;
+    box-sizing: border-box;
+    padding: 5px 5px;
+  }
+  /* 
+input{
+    width: 100%;
+    font-size: 1rem;
+
+} */
+
+  .footer {
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    color: gray;
+    text-align: center;
+    white-space: pre;
+    margin-top: 3rem;
+    left: 0;
+    padding: 20px;
+    z-index: 1;
+  }
+}
+@media (min-width: 567px) and (max-width: 900px) {
+  .login-logo {
+    background-color: black;
+  }
+
+  .login-body {
+    background-color: black;
+  }
+}
+@media (min-width: 900px) and (max-width: 1600px) {
+  .login-logo {
+    background-color: blue;
+  }
+  .login-body {
+    top: 30%;
+    left: 40%;
+  }
+}

@@ -1,0 +1,169 @@
+
+
+ .navbar{
+    background-color:rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--navbar-height);
+    z-index: 10;
+    min-width: 320px;
+}
+.navbar-logo{
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin:1rem;
+  color:white;
+}
+#burger-checkbox{
+    display: none;
+}
+#burger-chekbox{
+  position:absolute;
+  top: 1.5rem;
+  left: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0;
+  z-index: 3;
+}
+
+.burger-label{
+
+    position: absolute;
+    top:1.5rem;
+    left: 0.5tem;
+    width: 2rem;
+    height: 2rem;
+    z-index: 3;
+}
+
+.burger-label:before{
+        content:'';
+        background-color:gray;
+        width: 2.8rem;
+        height: .2rem;
+        position: absolute;
+        left: 10px;
+        top: 0.2rem;
+        box-shadow: 0 .60rem 0 0 gray, 0 1.2rem 0 0 gray;
+
+}
+
+.navbar-list{
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 0;
+    width: 80%;
+    max-width: 280px;
+    background:black;
+    opacity: 0.7;
+}
+
+#burger-checkbox:checked ~ .navbar-list{
+    display: inherit;
+}
+
+
+.navbar-item > a {
+    display: block;
+    text-align: center;
+    line-height: 2rem;
+    
+}
+
+.form-search {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: var(--header-height);
+  padding: 1rem;
+  transition: all ease-in 0.5s;
+  justify-content: flex-end;
+}
+
+.search{
+  /* Le restamos el padding del formulario al alto del navbar
+     para conseguir un tamaño cuadrado */
+  width: calc(var(--header-height) - 1rem);
+  border: solid 1px black;
+  border-radius: var(--border-radius);
+  background-color:red;
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: width ease-in 0.5s;
+  position: relative;
+}
+
+.search ~ label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--header-height);
+  line-height: var(--header-height);
+  width: var(--header-height);
+  background-color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.10rem;
+}
+
+.search:focus {
+  width: 100%;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.search:focus ~ label {
+  display: none;
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  .burger-label {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+  
+    
+  }
+
+  .navbar-list {
+    flex: 1 0;
+    height: unset;
+    width: unset;
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: black;
+   
+  }
+
+  .form-search {
+    position: unset;
+  }
+
+  .form-search .search{
+    width: auto;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .form-search .search{
+    width: auto;
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 1200px) {
+}

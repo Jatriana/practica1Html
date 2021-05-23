@@ -1,0 +1,156 @@
+.main {
+  margin-top: var(--header-height);
+  min-width: 320px;
+}
+
+.cards-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-item,
+.title-section {
+  margin: 2rem 1rem 0rem 1rem;
+}
+h1 {
+  color: red;
+  font-size: 2.5rem;
+}
+.info-card {
+  margin: 1rem;
+  position: relative;
+  min-height: 200px;
+}
+
+.info-card .cover-content img {
+  display: block;
+  width: 100%;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  background: rgba(24, 23, 29, 0.75);
+}
+
+.info-card .title-content {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  margin-bottom: 0.6rem;
+}
+.info-card .meta-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.meta-data .rating .age-public .classification .download .season {
+  margin-right: 10px;
+  font-size: 2rem;
+}
+.meta-data .classification {
+  border: white 0.4px solid;
+  padding: 1px;
+  -webkit-text-stroke: 0.6px rgb(173, 114, 114);
+  color: transparent;
+}
+.meta-data .download {
+  background-color: rgb(20, 115, 223);
+  padding: 2px;
+  border-radius: 3px 3px 3px 3px;
+}
+.meta-data .season {
+  background-color: rgb(20, 115, 223);
+  padding: 3px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.info-card::after,
+.info-card::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 29px;
+  height: 29px;
+  background: yellow;
+  border-radius: 10px 20px 10px 15px;
+  transform: rotate(-35deg);
+  transform-origin: 0 100%;
+  z-index: 99;
+}
+
+.info-card::after {
+  content: '';
+  margin-top: -0.29rem;
+  margin-left: -3.87rem;
+  transform: rotate(-70deg);
+}
+.info-card::before {
+  content: '';
+  margin-top: -0.15rem;
+  margin-left: -4.3rem;
+  transform: rotate(70deg);
+}
+.footer {
+  width: 100%;
+  background-color: black;
+  bottom: 0;
+  color: gray;
+  text-align: center;
+  white-space: normal;
+  margin-top: 1.5rem;
+  left: 0;
+
+  padding: 2px;
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .cards-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    padding-top: 5rem;
+  }
+
+  .cards-item .title-section {
+    position: absolute;
+    z-index: 5;
+    top: 2rem;
+    left: 1rem;
+    margin: 0;
+  }
+
+  .info-card {
+    margin: 1rem 0;
+    width: 45%;
+    overflow: hidden;
+  }
+}
+/* @media (min-width: 992px) {
+  .info-card {
+    width: 30%;
+  }
+} */
+
+@media (min-width: 1200px) {
+  .info-card {
+    width: calc(100% / 4 - 1rem);
+  }
+}
+@media (hover: hover) {
+  .card-content {
+    opacity: 0;
+    transition: all cubic-bezier(0.81, -0.04, 1, 1) 0.3s;
+    transform: translateY(100%);
+  }
+
+  .info-card a:hover .card-content {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

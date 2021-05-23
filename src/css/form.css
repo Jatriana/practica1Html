@@ -1,0 +1,31 @@
+.form, .form-button{
+    display: block;
+    margin:1rem;
+}
+
+.form label{
+    
+    display: block;
+    margin-bottom: .3125rem;
+    text-align: left;
+    color: gray;
+    transition: color .5s;
+    font-weight: 700;
+    padding: 3px;
+}
+
+.input-text{
+    height: 3rem;
+    display: block;
+    margin: 0;
+    font-size: 1.1rem;
+    width: 99%;
+    border-radius: var(--border-radius);
+} 
+    
+.fit{
+    width: 100%;
+    border: 0;
+    padding: 2px 2px 2px 2px;
+}
+

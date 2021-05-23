@@ -4,15 +4,20 @@
 
 
 :root{
-    --login-header-logo-height:3rem;
+    --login-logo-height:3rem;
+    --border-radius: 5px;
+    --header-height: 5rem;
+    --screen-sm-min: 576px;
+    
+
 }
 
 
 body{
 
-    background: black;
-    padding-top: var(--login-header-logo-height) ;
-    display: flex;
+    background:black;
+    padding-top: var(--login-logo-height) ;
+   
 
 
 }
