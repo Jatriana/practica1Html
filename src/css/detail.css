@@ -6,11 +6,30 @@
 .cards-item-details {
   display: block;
   margin: 1rem 1rem 0rem 1rem;
+  color: white;
 }
 
 .meta-data-details {
-  top: 2rem;
-  bottom: 2rem;
+  top: 1rem;
+  bottom: 1rem;
+  margin: 0.5rem;
+  right: 3rem;
+  font-size: 1.2rem;
+}
+
+.rating-details .age-public-details .classification-details .download-details {
+  left: 2rem;
+}
+.meta-data-details .classification-details {
+  border: rgb(209, 11, 11) 0.4px solid;
+  padding: 1px;
+  -webkit-text-stroke: 0.6px rgba(202, 48, 9, 0.836);
+  color: transparent;
+}
+.meta-data-details .download-details {
+  background-color: rgb(20, 115, 223);
+  padding: 2px;
+  border-radius: 3px 3px 3px 3px;
 }
 
 .cards-item {
