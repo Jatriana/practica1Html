@@ -126,11 +126,11 @@ h1 {
     overflow: hidden;
   }
 }
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   .info-card {
-    width: 30%;
+    width: 48%;
   }
-} */
+}
 
 @media (min-width: 1200px) {
   .info-card {
